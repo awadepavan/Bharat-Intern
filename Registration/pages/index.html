@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        height: 100vh;
+        /* width: 100%; */
+        background-color: #003060;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main-Container {
+        height: 600px;
+        width: 600px;
+        background-color: #68bbe3;
+        border-radius: 10px;
+      }
+
+      #main-head {
+        text-align: center;
+        padding-bottom: 50px;
+      }
+
+      input {
+        width: 500px;
+        height: 30px;
+        margin-left: 40px;
+        margin-right: 30px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        font-size: 15px;
+      }
+      p {
+        margin-left: 40px;
+        padding-bottom: 10px;
+      }
+      .input1 {
+        font-size: 20px;
+      }
+      .input2 {
+        font-size: 20px;
+      }
+      .input3 {
+        font-size: 20px;
+      }
+      .input4 {
+        font-size: 20px;
+      }
+      button {
+        font-size: 20px;
+        margin-left: 40px;
+        background-color: #055c9d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form class="main-Container" method="post" action="/register">
+        <h1 id="main-head">Registration Form</h1>
+        <div class="input1">
+          <p>Name:</p>
+          <input type="text" placeholder="Enter Your Name" name="Name" />
+        </div>
+        <div class="input2">
+          <p>LastName:</p>
+          <input
+            type="text"
+            placeholder="Enter your LastName"
+            name="LastName"
+          />
+        </div>
+        <div class="input3">
+          <p>Email Address:</p>
+          <input type="email" placeholder="Enter your Email" name="Email" />
+        </div>
+        <div class="input4">
+          <p>password:</p>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </body>
+</html>
